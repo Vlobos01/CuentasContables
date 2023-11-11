@@ -109,7 +109,13 @@ namespace CuentasContablesTp3
                 DataRowView row = dv[0];
                 TextBox1.Text = row["monto"].ToString();
                 DropDownList1.SelectedValue = row["idCuenta"].ToString();
-                DropDownList2.SelectedValue = row["tipo"].ToString();
+
+                //verificar si el valor existe en DropDownList2 antes de asignarlo
+                string tipoValue = row["tipo"].ToString();
+                if (DropDownList2.Items.FindByValue(tipoValue) != null)
+                {
+                    DropDownList2.SelectedValue = tipoValue;
+                }
             }
             completarTabla();  
         }

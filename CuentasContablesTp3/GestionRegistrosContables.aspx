@@ -22,8 +22,8 @@
             <asp:Label ID="Label1" runat="server"></asp:Label>
             <br />
             <asp:DropDownList ID="DropDownList2" runat="server">
-                <asp:ListItem Value="false">Debe</asp:ListItem>
-                <asp:ListItem Value="true">Haber</asp:ListItem>
+                <asp:ListItem Value="False">Debe</asp:ListItem>
+                <asp:ListItem Value="True">Haber</asp:ListItem>
             </asp:DropDownList>
             <br />
             <br />
